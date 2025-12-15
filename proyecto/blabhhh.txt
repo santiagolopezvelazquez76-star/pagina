@@ -1,0 +1,79 @@
+HTML------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../paginadebarrabrava.css">
+</head>
+
+<body>
+ <h2>¿las barras bravas ?</h2>
+
+    <h4>Así se le denomina a los grupos de seguidores radicales de un determinado equipo de futbol que se organizan,
+        mediante códigos bien definidos, para mostrarle su apoyo incondicional, usando la mayoría de las veces la
+        violencia como método de comportamiento. </h3>
+
+    <img src="https://www.google.com/imgres?q=barra%20brava%20fotos%20paa%20html&imgurl=https%3A%2F%2Fst2.depositphotos.com%2F4177785%2F6162%2Fv%2F450%2Fdepositphotos_61621793-stock-illustration-danger-men-in-hoodie-standing.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fmx%2Fvectors%2Fbarra-brava.html&docid=Zn5NXZJo0S9pZM&tbnid=_DZV3VVpp6paKM&vet=12ahUKEwj7n9_7hZCQAxVCM0QIHRfzGiAQM3oECCwQAA..i&w=600&h=439&hcb=2&ved=2ahUKEwj7n9_7hZCQAxVCM0QIHRfzGiAQM3oECCwQAA"
+        alt="barra brava">
+
+    <h3>Definición de una barra brava</h3>
+
+    <h4>El concepto de hinchada se refiere a cantidades de personas que se reúnen en los estadios para "apoyar" a su
+        equipo, comúnmente en regiones como el continente europeo y Latinoamérica. Con rasgos muy característicos, como
+        el uso de "trapos" (carteles de tela), banderines relacionados con los colores de su club, así como con la
+        entonación de cánticos que suelen ser ofensivas y/o provocativas hacia los equipos y barras rivales.[2]​
+
+        Un rasgo muy característico en América Latina, es la concepción de barra brava o "hincha", originarios
+        inicialmente del Cono Sur, específicamente de Argentina, las cuales se han diferenciado de su contraparte
+        europea por no tener un pensamiento homogéneo,[3]​ por su neutralidad o secularismo hacia una simpatía política
+        en específico, coexistiendo integrantes con diversas ideas políticas o creencias religiosas, uniéndolos solo el
+        "amor incondicional" a su equipo, así como el uso de instrumentos musicales, que van de trompetas, tambores
+        hasta platillos y cornetas. Dado estas diferencias, los hinchas han denominado a los aficionados europeos como
+        "Ultras"</h3>
+
+</body>
+<script src="/js/script.js"></script>
+
+</html>
+
+CSS-----------------------------------------------------------------------------
+head{
+    font-style: normal;
+    opacity: inherit;
+    align-self: center;
+
+}
+body{
+    text-align: justify;
+    color: rgb(87, 94, 100);
+}
+
+Js--------------------------------------------------------------------------------
+// Espera a que todo el HTML esté cargado
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("La página cargó correctamente.");
+
+    // Ejemplo: seleccionar un campo de búsqueda
+    const input = document.querySelector(".search-input");
+
+    // Ejemplo: seleccionar un botón
+    const btn = document.querySelector(".search-btn");
+
+    // Si existen los elementos, les agregamos funcionalidad
+    if (input && btn) {
+        btn.addEventListener("click", () => {
+            const texto = input.value.trim();
+
+            if (texto === "") {
+                alert("Escribe algo para buscar 😄");
+            } else {
+                console.log("Buscando:", texto);
+                alert(`Buscando: ${texto}`);
+            }
+        });
+    }
+});
